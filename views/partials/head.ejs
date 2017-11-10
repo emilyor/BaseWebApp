@@ -24,5 +24,22 @@
 <!-- then bootstrap -->
 <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+
+var apiKey = '<%= process.env.API_KEY %>';
+  // Initialize Firebase
+  var config = {
+    apiKey: apiKey,
+    authDomain: "webappdev-34494.firebaseapp.com",
+    databaseURL: "https://webappdev-34494.firebaseio.com",
+    projectId: "webappdev-34494",
+    storageBucket: "webappdev-34494.appspot.com",
+    messagingSenderId: "989189095585"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <!-- then our app's own js file -->
 <script src="/js/main.js"></script>
